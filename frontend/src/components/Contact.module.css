@@ -1,0 +1,78 @@
+@import "../vars.css";
+.foot{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    align-items: center;
+    margin-top: 30px;
+    color: var(--color-text);
+    background-color: var(--color-secondary);
+    padding-top: 10px;
+
+}
+.left p{
+    font-size: x-large;
+}
+.contactDetails{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+.contactDetails img{
+    height: 40px;
+    width: 40px;
+
+}
+
+.email{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.email div:hover{
+    color: var(--color-primary);
+}
+.email div{
+    padding: 7px;
+}
+.linkdin{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: flex-end; */
+    align-items: flex-end;
+    margin-top: 15px;
+}
+.linkdin div{
+    padding: 7px;
+}
+.linkdin div:hover{
+    color: var(--color-primary);
+}
+.github{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-top: 15px;
+}
+.github div{
+    padding:7px;
+}
+.github div:hover{
+    color: var(--color-bg);
+}
+
+@media screen and (max-width:846px) 
+{
+    .foot{
+
+        flex-direction:column;
+        justify-content:center;
+        margin-top: 40px;
+        padding-top: 20px;
+    }
+    .left h1{
+        padding-bottom: 10px;
+    }
+}

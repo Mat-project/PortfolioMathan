@@ -1,0 +1,72 @@
+@import '../vars.css';
+.Skill{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    background-color:rgba(0, 0, 0, 0.651);
+    border-radius: 10px;
+    margin:100px;
+    padding-top: 30px;
+}
+.title{
+    color: var(--color-text);
+    margin-top: 25px;
+}
+.Img{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 60px;
+    padding: 20px;
+}
+.Skill img{
+    display: flex;
+    width: 110px;
+    height: 110px;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+.Img div{
+    display: flex;
+    color: var(--color-text);
+    align-items: center;
+}
+@media screen and (max-width:750px) {
+    .Img div {
+        display: flex;
+        flex-direction: column;
+    }
+    .Skill img{
+        
+        width: 85px;
+        height: 85px;
+    }
+    
+}
+@media screen and (max-width:600px) {
+    .Img div {
+        display: flex;
+        flex-direction: column;
+    }
+    .Skill img{
+        
+        width: 70px;
+        height: 70px;
+        
+    }
+    .Skill{
+        margin: 30px;
+    }
+    .Img{
+        margin: 30px;
+        padding: 10px;
+    }
+    
+}

@@ -1,0 +1,86 @@
+@import '../vars.css';
+.full{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.Name{
+    display: flex;
+
+    color: var(--color-text);
+    flex-direction: column;
+    flex-basis: 55%;
+    
+}
+.Name h1{
+    font-size: xx-large;
+    padding-top: 140px;
+}
+.Name h1 , h2, h3{  
+    display: flex;
+    padding-bottom: 15px;
+    padding-left: 36px;
+    color: var(--color-text);
+    flex-direction: column;
+    flex-basis: 55%;
+    
+}
+.Name h2{
+    font-size: xx-large;
+}
+.Name h3{
+    font-size: x-large;
+}
+.Name p{
+    display: flex;
+    color: var(--color-text);
+    padding-left: 36px;
+    font-size: medium;
+    font-weight:550;
+    font-family:'Courier New', Courier, monospace;
+    padding-bottom: 40px;
+
+}
+.Img{
+    display: flex;
+    flex-basis: 30%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    padding-right: 24px;
+
+}
+.Img img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    
+}
+@media screen and (max-width:750px) {
+    .full{
+        flex-direction: column-reverse;
+    }
+    .Name h1{
+        padding-top: 50px;
+    }
+    .Img{
+        margin-top: 10px;
+    }
+    .Img img{
+        width: 250px;
+        height: 250px;
+    }
+    
+}
+@media screen and (max-width:350px) {
+    .Img img{
+        width: 200px;
+        height: 200px;
+    }
+    .Name h1 , h2, h3{
+        padding-left: 18px;
+    }
+    .Name p{
+        padding-left: 18px;
+    }
+}
